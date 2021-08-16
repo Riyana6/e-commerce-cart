@@ -14,9 +14,9 @@ export default function CartScreen() {
                     <p>Subtotal (0) items</p>
                     <p>$499.99</p>
                 </div>
-            </div>
-            <div>
-                <button>Proceed To Checkout</button>
+                <div>
+                    <button>Proceed To Checkout</button>
+                </div>
             </div>
         </div>
     )

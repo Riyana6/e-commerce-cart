@@ -1,5 +1,6 @@
 import React from 'react'
 import './CartItem.css'
+import {Link} from 'react-router-dom'
 
 export default function CartItem() {
     return (
@@ -10,6 +11,22 @@ export default function CartItem() {
                     alt="product name"
                 />
             </div>
+            <Link to={`/product/${111}`} className="cartitem__name">
+                <p>Product 1</p>
+            </Link>
+
+            <p className="cartitem__price">$499.99</p>
+
+            <select className="cartitem_select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <button className="cartitem__deleteBtn">
+                <i className="fas fa-trash"></i>
+            </button>
         </div>
     )
 }
