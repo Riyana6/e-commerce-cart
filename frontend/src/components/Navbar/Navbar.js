@@ -8,17 +8,14 @@ const Navbar = ({click}) => {
     const {cartItems} = cart;
 
     const getCartCount = () => {
-        return cartItems.reduce((qty, item) => qty + Number(item.qty), 0);
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
     }
 
     return (
         <nav className ="navbar">
-            {/*logo */}
             <div className="navbar__logo">
                 <h2>MERN Shopping Cart</h2>
             </div>
-
-            {/*links */}
             <ul className="navbar__links">
                 <li>
                     <Link to="/cart" className="cart__link">

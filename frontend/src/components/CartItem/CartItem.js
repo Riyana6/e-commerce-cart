@@ -15,7 +15,7 @@ export default function CartItem({item, qtyChangeHandler,removeFromCartHandler})
                 <p>{item.name}</p>
             </Link>
 
-            <p className="cartitem__price">${item.price}</p>
+            <p className="cartitem__price">$ {item.price}</p>
 
             <select value={item.qty} onChange={(e) => qtyChangeHandler(item.product, e.target.value)}>
                 {[...Array(item.countInStock).keys()].map((x) => (

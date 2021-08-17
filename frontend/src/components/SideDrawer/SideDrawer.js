@@ -14,7 +14,7 @@ export default function SideDrawer({show,click}) {
     const {cartItems} = cart;
 
     const getCartCount = () => {
-        return cartItems.reduce((qty, item) => qty + Number(item.qty), 0);
+        return cartItems.reduce((qty, item) =>Number(item.qty) +qty, 0);
     }
 
     return <div className={sidedrawerClass.join(" ")}>
@@ -23,15 +23,13 @@ export default function SideDrawer({show,click}) {
                 <Link to="/cart">
                     <i className="fas fa-shopping-cart"></i>
                     <span>
-                        Cart
+                        Cart {" "}
                         <span className="sidedrawer__cartbadge">{getCartCount()}</span>
                     </span>
                 </Link>
             </li>
             <li>
-                <Link to="/">
-                    shop
-                </Link>
+                <Link to="/">shop</Link>
             </li>
         </ul>
     </div>;
