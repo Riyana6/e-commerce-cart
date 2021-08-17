@@ -3,11 +3,11 @@ import CartItem from '../../components/CartItem/CartItem';
 import { React } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
-
+import PayPalButton from '../../components/PayPalButton/PayPalButton'
 //actions
 import {addToCart, removeFromCart} from '../../redux/actions/cartActions';
 
-export default function CartScreen() {
+export default function CartScreen({history}) {
 
     const dispatch = useDispatch();
 
@@ -53,7 +53,11 @@ export default function CartScreen() {
                     <p>${getCartSubTotal().toFixed(2)}</p>
                 </div>
                 <div>
-                    <button>Proceed To Checkout</button>
+                    Proceed to Checkout
+                    <PayPalButton
+                        total={getCartSubTotal().toFixed(2)}
+                        history={history}
+                    />
                 </div>
             </div>
         </div>

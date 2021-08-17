@@ -25,6 +25,7 @@
 .cartscreen__right div {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
+
 }
 
 .cartscreen__info p {
@@ -39,17 +40,13 @@
     border: none;
 }
 
-.cartscreen__right div button {
+.cartscreen__right div  {
     padding: 10px 17px;
     width: 100%;
     background: #171717;
     color: #f4f4f4;
     border: 1px solid #171717;
     cursor: pointer;
-}
-
-.cartscreen__right div button:hover {
-    opacity: 0.9;
 }
 
 @media (max-width: 1320px) {
