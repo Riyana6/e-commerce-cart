@@ -1,6 +1,5 @@
-import React from 'react'
 import './ProductScreen.css'
-import { useState, useEffect } from 'react'
+import { React, useState, useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 
 //actions
@@ -19,11 +18,11 @@ export default function ProductScreen({match, history}) {
         if(product && match.params.id !== product._id) {
             dispatch(getProductDetails(match.params.id));
         }
-    }, [dispatch, product, match]);
+    }, [dispatch, match, product]);
 
     const addToCartHandler = () => {
         dispatch(addToCart(product._id, qty));
-        history.push("/cart");
+        history.push(`/cart`);
     };
 
     return (
@@ -44,9 +43,7 @@ export default function ProductScreen({match, history}) {
                         <div className="left__info">
                             <p className="left__name">{product.name}</p>
                             <p className="info__price">Price: ${product.price}</p>
-                            <p className="info__description">
-                                Description: {product.description}
-                            </p>
+                            <p className="info__description">Description: {product.description}</p>
                         </div>
                     </div>
                     <div className="productscreen__right">
