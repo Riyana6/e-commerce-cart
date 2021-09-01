@@ -1,5 +1,23 @@
 const products = [
     {
+        name: "Bose Earphones",
+        imageUrl:
+            "https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_640/MTc1MDE0MDUwOTIzNzUxMTQ0/5-top-earphone-brands-which-provide-the-best-sound-quality.webp",
+        description:
+            "Outfitted with 45mm large-aperture dynamic drivers and an over-ear, closed-back design, the ATH-M50x headphones deliver clarity, deep bass, and extended bandwidth (15 Hz to 28 kHz) while isolating you from outside sounds.",
+        price: 233,
+        countInStock: 4,
+    },
+    {
+        name: "FlexWeight Mouse",
+        imageUrl:
+            "https://files.sandberg.world/products/images/lg/640-19_lg.jpg.webp",
+        description:
+            "The Sandberg Destroyer FlexWeight Mouse allows you to decide how much your mouse should weigh. The speed of which you can move your mouse is essential to your performance, and this is where the weight of the mouse plays a crucial role.",
+        price: 51,
+        countInStock: 4,
+    },
+    {
         name: "PlayStation 5",
         imageUrl:
             "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",

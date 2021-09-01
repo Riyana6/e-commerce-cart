@@ -15,7 +15,7 @@ const Navbar = ({click}) => {
     return (
         <nav className ="navbar">
             <div className="navbar__logo">
-                <h2>MERN Shopping Cart</h2>
+                <h2>Shopping Cart</h2>
                 <AlanBtn/>
             </div>
 
@@ -30,7 +30,7 @@ const Navbar = ({click}) => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/" className="cart__link">
                         shop
                     </Link>
                 </li>

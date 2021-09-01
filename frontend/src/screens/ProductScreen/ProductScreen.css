@@ -60,7 +60,7 @@
     grid-column: 1/-1;
     width: 100%;
     padding: 10px 16px;
-    background: #171717;
+    background: rgb(3, 10, 99);
     color: #f4f4f4;
     border: 1px solid #171717;
     cursor: pointer;
