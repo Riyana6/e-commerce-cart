@@ -1,6 +1,5 @@
-import React from 'react'
 import './HomeScreen.css'
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import {useSelector, useDispatch} from 'react-redux'
 
 //components

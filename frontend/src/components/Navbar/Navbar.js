@@ -1,6 +1,7 @@
 import './Navbar.css';
 import {Link} from 'react-router-dom';
 import {useSelector} from 'react-redux'
+import AlanBtn from '../../screens/AlanBtn'
 
 const Navbar = ({click}) => {
 
@@ -15,7 +16,9 @@ const Navbar = ({click}) => {
         <nav className ="navbar">
             <div className="navbar__logo">
                 <h2>MERN Shopping Cart</h2>
+                <AlanBtn/>
             </div>
+
             <ul className="navbar__links">
                 <li>
                     <Link to="/cart" className="cart__link">
