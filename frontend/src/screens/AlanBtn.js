@@ -2,11 +2,9 @@ import React, {useEffect} from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import {addToCart }from '../redux/actions/cartActions'
 import {useDispatch} from 'react-redux'
-import { useParams } from "react-router-dom";
 const alanKey='c4766e6fbd24d6b914e0f4a093981f9a2e956eca572e1d8b807a3e2338fdd0dc/stage';
 export default function AlanBtn() {
     const dispatch = useDispatch();
-    const params = useParams();
     useEffect(()=> {
         alanBtn({
             key:alanKey,
@@ -23,6 +21,8 @@ export default function AlanBtn() {
                 }else if(commandData.command  === 'addToCart'){
                     const id = window.location.pathname.split('/')[2];
                     dispatch(addToCart(id,1));
+                }else if(commandData.command === 'increment'){
+                    
                 }
             }
         })
